@@ -15,11 +15,6 @@ export function fetchBreeds() {
       return data
       }
   )
-  .catch((error) => {
-    Notiflix.Notify.failure(selectors.errorEl.textContent);
-  })
-  .finally(function () {
-})
 }
 
 export function fetchCatByBreed(breedId) {
@@ -28,9 +23,4 @@ export function fetchCatByBreed(breedId) {
       .then(({ data }) => {
         return data
     })
-    .catch((error) => {
-     Notiflix.Notify.failure(selectors.errorEl.textContent);
-  })
-    .finally(function () {
-})
 }
