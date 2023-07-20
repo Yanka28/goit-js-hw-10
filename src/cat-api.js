@@ -19,7 +19,7 @@ export function fetchBreeds() {
     Notiflix.Notify.failure(selectors.errorEl.textContent);
   })
   .finally(function () {
-});
+})
 }
 
 export function fetchCatByBreed(breedId) {
@@ -32,5 +32,5 @@ export function fetchCatByBreed(breedId) {
      Notiflix.Notify.failure(selectors.errorEl.textContent);
   })
     .finally(function () {
-});
+})
 }
